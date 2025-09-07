@@ -1,9 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.tudou.client.mixin",
+  "package": "dev.tudou.mossad.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "MixinMinecraftClient",
+    "MixinKeyboard",
+    "MixinInGameHud"
   ],
   "client": [
   ],

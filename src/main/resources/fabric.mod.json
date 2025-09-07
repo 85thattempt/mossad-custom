@@ -11,9 +11,6 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "dev.tudou.mossad.client.MossadClient"
-    ],
-    "main": [
       "dev.tudou.mossad.Mossad"
     ]
   },
