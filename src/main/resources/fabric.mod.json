@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "mossad",
+  "version": "${version}",
+  "name": "mossad",
+  "description": "nigger",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mossad/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.tudou.mossad.client.MossadClient"
+    ],
+    "main": [
+      "dev.tudou.mossad.Mossad"
+    ]
+  },
+  "mixins": [
+    "mossad.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
