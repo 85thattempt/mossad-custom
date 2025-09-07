@@ -2,6 +2,7 @@ package dev.tudou.mossad;
 
 import dev.tudou.mossad.impl.features.Module;
 import dev.tudou.mossad.core.manager.ModuleManager;
+import dev.tudou.mossad.impl.features.gui.screens.ClickGui.ui;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.MinecraftClient;
 import org.apache.logging.log4j.LogManager;
@@ -30,6 +31,8 @@ public class Mossad implements ClientModInitializer {
                 if (key == module.getKey()) module.toggle();
 
             }
+
+            if (key == GLFW.GLFW_KEY_RIGHT_SHIFT) mc.setScreen(ui.INSTANCE);
         }
 
 

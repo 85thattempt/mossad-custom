@@ -96,11 +96,17 @@ public class Module {
     }
 
     public enum Category {
-        COMBAT,
-        MISC,
-        VISUAL,
-        MOVEMENT,
-        EXPLOITS,
-        CORE
+        COMBAT("Combat"),
+        MISC("Misc"),
+        VISUALS("Visuals"),
+        MOVEMENT("Movement"),
+        EXPLOITS("Exploits"),
+        CORE("Core");
+
+        public String name;
+
+        private Category(String name) {
+            this.name = name;
+        }
     }
 }
