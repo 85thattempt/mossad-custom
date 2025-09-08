@@ -22,7 +22,7 @@ public class ui extends Screen {
         int offset = 20;
         for (Category category : Category.values()) {
             frames.add(new Frame(category, offset, 15, 100, 15));
-            offset += 120;
+            offset += 105;
         }
     }
 

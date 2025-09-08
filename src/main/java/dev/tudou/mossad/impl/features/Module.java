@@ -1,6 +1,10 @@
 package dev.tudou.mossad.impl.features;
 
+import dev.tudou.mossad.impl.features.settings.Setting;
 import net.minecraft.client.MinecraftClient;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Module {
 
@@ -11,6 +15,8 @@ public class Module {
     private int key;
     private boolean enabled;
 
+    private List<Setting> settings = new ArrayList<>();
+
     protected MinecraftClient mc = MinecraftClient.getInstance();
 
     public Module(String name, String description, Category category) {
@@ -18,6 +24,19 @@ public class Module {
         this.displayName = name;
         this.description = description;
         this.category = category;
+    }
+
+    public List<Setting> getSettings() {
+        return settings;
+    }
+
+    public void addSetting(Setting setting) {
+    }
+
+    public void addSettings(Setting... settings) {
+        for (Setting setting : settings) addSetting(setting); {
+
+        }
     }
 
     public void toggle() {

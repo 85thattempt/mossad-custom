@@ -7,7 +7,6 @@ public class Sprint extends Module {
 
     public Sprint() {
         super("Sprint", "makes the player sprint", Category.MOVEMENT);
-        this.setKey(GLFW.GLFW_KEY_Y);
     }
 
     @Override
